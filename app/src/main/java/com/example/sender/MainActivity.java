@@ -44,15 +44,15 @@ public class MainActivity extends AppCompatActivity {
     public void set_values() {
         String a1 = inpa.getText().toString();
         if (!a1.isEmpty()) a = Integer.parseInt(a1);
-        else a = 1;
+        else a = 0;
 
         String b1 = inpb.getText().toString();
         if (!b1.isEmpty()) b = Integer.parseInt(b1);
-        else b = 1;
+        else b = 0;
 
         String c1 = inpc.getText().toString();
         if (!c1.isEmpty()) c = Integer.parseInt(c1);
-        else c = 1;
+        else c = 0;
     }
 
 
