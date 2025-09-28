@@ -1,5 +1,6 @@
 package com.example.sender;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -58,7 +59,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void send(View view) {
+        Intent shaw = new Intent(this, MainActivity2.class);
+
         set_values();
+        shaw.putExtra("a", a);
+        shaw.putExtra("b", b);
+        shaw.putExtra("c", c);
+        startActivity(shaw);
+
+
     }
 
     public void put(View view) {
